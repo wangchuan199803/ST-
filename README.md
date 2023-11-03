@@ -12,3 +12,16 @@ step1. 在有标签的数据集$D_l$上训练老师网络T
 step2. 使用网络T给无标签的数据集$D_u$打标签
 
 step3. 在合并后的数据集$D_u\cup D_l$上训练一个学生网络S
+
+├── ./pretrained
+    ├── resnet50.pth
+    ├── resnet101.pth
+    └── deeplabv2_resnet101_coco_pretrained.pth
+    
+├── [Your Pascal Path]
+    ├── JPEGImages
+    └── SegmentationClass
+    
+├── [Your Cityscapes Path]
+    ├── leftImg8bit
+    └── gtFine
